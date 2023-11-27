@@ -1,0 +1,197 @@
+.menu {
+  background-color: hsl(228, 56%, 26%);
+  padding: 35px 130px 35px 35px;
+  border-radius: 20px 90px 20px 20px;
+}
+.logo-container {
+  margin-bottom: 30px;
+}
+
+.icon {
+  padding: 10px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.size-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/bg-desktop.png"), hsl(229, 57%, 11%);
+    background-size: contain, auto;
+    background-repeat: no-repeat;
+    background-position-y: 330px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway";
+  }
+
+  .dialog {
+    height: fit-content;
+    flex-wrap: wrap;
+    align-items: end;
+    display: flex;
+  }
+
+  .slider {
+    appearance: none;
+    width: 400px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+
+  .storage-container {
+    background-color: hsl(228, 56%, 26%);
+    margin-left: 40px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .used-storage {
+    color: hsl(243, 100%, 93%);
+    margin: 20px 0px;
+  }
+
+  .used-storage span {
+    font-weight: 600;
+  }
+
+  .total-storage-container {
+    position: absolute;
+    top: -52px;
+    right: 38px;
+  }
+
+  .dialog-top {
+    background-color: white;
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+  }
+
+  .dialog-top span {
+    font-size: 15px;
+    color: hsl(229, 7%, 55%);
+    margin: 0px 10px;
+  }
+
+  .dialog-bottom {
+    border-left: 22px solid transparent;
+    border-right: 22px solid white;
+    border-bottom: 30px solid transparent;
+    height: 0;
+    width: 0;
+    right: 0px;
+    z-index: 1;
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    background: url("../assets/bg-mobile.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway";
+  }
+
+  .dialog {
+    display: grid;
+  }
+
+  .storage-container {
+    background-color: hsl(228, 56%, 26%);
+    margin-top: 40px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .slider {
+    appearance: none;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+
+  .used-storage {
+    color: hsl(243, 100%, 93%);
+    margin: 20px 0px;
+  }
+
+  .used-storage span {
+    font-weight: 600;
+  }
+
+  .total-storage-container {
+    position: absolute;
+    top: 150px;
+    right: 90px;
+  }
+
+  .dialog-top {
+    background-color: white;
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .dialog-top span {
+    font-size: 15px;
+    color: hsl(229, 7%, 55%);
+    margin: 0px 10px;
+  }
+
+  .size-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
